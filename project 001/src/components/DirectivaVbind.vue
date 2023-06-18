@@ -1,8 +1,6 @@
 <template>
     <div>
-        <h1 v-bind:class="{
-            'error': alert
-        }">El mensaje es valido</h1>
+        <h1 :class="{'error': alert}">El mensaje es valido</h1>
 
         <button :onClick="active">{{ msg }}</button>
     </div>

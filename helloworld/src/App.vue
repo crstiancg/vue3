@@ -1,12 +1,13 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <DirectivaIterativa></DirectivaIterativa>
+  <DirectivaVbind></DirectivaVbind>
 </template>
 
 <script lang="ts" setup>
 // import ButtonComponet from './components/ButtonComponet.vue';
 // import DirectivaSelectiva from './components/DirectivaSelectiva.vue';
 import DirectivaIterativa from './components/DirectivaIterativa.vue';
+import DirectivaVbind from './components/DirectivaVbind.vue';
 </script>
 
 <style>

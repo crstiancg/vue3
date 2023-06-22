@@ -18,6 +18,9 @@
                 <input type="text" v-model="materia">
                 <button v-bind:onClick="materias"> Añadir Materia</button>
                 <hr>
+                <label>Marcar Entrega</label>
+                <input type="checkbox" v-model="teacher.entrega">
+                <hr>
                 <button :onClick="add">Enviar form</button>
         </div>
 
@@ -30,6 +33,7 @@
                     <th>Apellido Paterno</th>
                     <th>Apellido Materno</th>
                     <th>Materias</th>
+                    <th>Entrega</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -43,6 +47,8 @@
                             <li>{{mat}}</li>
                         </ul>
                     </td>
+                    <td v-if="item.entrega">Entregado...</td>
+                    <td v-else>No entregado...</td>
                   </tr>
                 </tbody>
               </table>
@@ -58,7 +64,8 @@ interface Iteach{
     surname: string,
     lastname: string,
     dni: string,
-    materias: Array<string>, 
+    materias: Array<string>,
+    entrega: boolean 
 }
 
 const teacher:Ref<Iteach> = ref(
@@ -68,6 +75,7 @@ const teacher:Ref<Iteach> = ref(
         lastname: '',
         dni: '',
         materias: [],
+        entrega: false,
     });
 
 // constantes para almacenar
@@ -87,12 +95,14 @@ const add = () => {
         lastname: teacher.value.lastname,
         dni: teacher.value.dni,
         materias: teacher.value.materias,
+        entrega: teacher.value.entrega,
     })
     teacher.value.name = ""
     teacher.value.surname = ""
     teacher.value.lastname = ""
     teacher.value.dni = ""
     teacher.value.materias = []
+    teacher.value.entrega = false
 }
 
 </script>

@@ -1,16 +1,14 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <DirectivaVbind></DirectivaVbind>
-  <DirectivaVbind></DirectivaVbind>
-  <DirectivaVbind></DirectivaVbind>
-  <DirectivaVbind></DirectivaVbind>
+  <EjercicioDocente/>
 </template>
 
 <script lang="ts" setup>
 // import ButtonComponet from './components/ButtonComponet.vue';
 // import DirectivaSelectiva from './components/DirectivaSelectiva.vue';
-import DirectivaIterativa from './components/DirectivaIterativa.vue';
-import DirectivaVbind from './components/DirectivaVbind.vue';
+// import DirectivaIterativa from './components/DirectivaIterativa.vue';
+// import FormVmodel from './components/FormVmodel.vue';
+import EjercicioDocente from './components/EjercicioDocente.vue';
 </script>
 
 <style>

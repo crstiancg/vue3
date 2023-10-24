@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <EjercicioDocente/>
+  <CycleComposition/>
 </template>
 
 <script lang="ts" setup>
@@ -8,7 +8,7 @@
 // import DirectivaSelectiva from './components/DirectivaSelectiva.vue';
 // import DirectivaIterativa from './components/DirectivaIterativa.vue';
 // import FormVmodel from './components/FormVmodel.vue';
-import EjercicioDocente from './components/EjercicioDocente.vue';
+import CycleComposition from './components/CycleComposition.vue';
 </script>
 
 <style>

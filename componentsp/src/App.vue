@@ -1,9 +1,11 @@
 <template>
-  <HelloWorld/>
+  <AuthLogin/>
+  <!-- <CardLogin/> -->
 </template>
 
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import AuthLogin from './components/AuthLogin.vue'
+// import CardLogin from './components/CardLogin.vue';
 </script>
 
 <style>
